@@ -54,8 +54,8 @@ lon = ncread("chl/AQUA_MODIS.20020704_20020711.L3m.8D.CHL.chlor_a.9km.nc", 'lon'
 lat = ncread("chl/AQUA_MODIS.20020704_20020711.L3m.8D.CHL.chlor_a.9km.nc", 'lat');
 
 % Define coordinate ranges
-lon_ranges = [-150, -140]; %customize to your analysis
-lat_ranges = [50, 55]; %customize to your analysis
+lon_ranges = [-50, -40]; %customize to your analysis
+lat_ranges = [45, 50]; %customize to your analysis
 
 % Get indices for coordinate ranges
 lon_idx = find(lon >= lon_ranges(1) & lon <= lon_ranges(2));
